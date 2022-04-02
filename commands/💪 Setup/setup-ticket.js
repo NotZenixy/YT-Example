@@ -408,7 +408,7 @@ module.exports = {
                     //channel id in db
                     client.setups.set(message.guild.id, channel.id, `ticketsystem${SetupNumber}.channelid`);
 
-                    let button_open = new MessageActionRow().addComponents([new MessageButton().setStyle('SUCCESS').setCustomId('create_a_ticket').setLabel('Create a Ticket')])
+                    let button_open = new MessageActionRow().addComponents([new MessageButton().setStyle('SUCCESS').setCustomId('create_a_ticket').setLabel('Create a Ticket').setEmoji('💯')])
 
                     channel.send({
                       embeds: [new MessageEmbed()
