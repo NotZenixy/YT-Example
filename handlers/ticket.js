@@ -269,7 +269,7 @@ module.exports = (client, preindex) => {
           })
         }
       }
-      await interaction?.editReply({ content: `<a:yes:833101995723194437> **Your Ticket is created!** <#${ch.id}> \n<a:yes:833101995723194437> **Ping Successful!** You have now ordered a bot`, ephemeral: true });
+      await interaction?.editReply({ content: `<a:yes:833101995723194437> **Your Ticket is created!** <#${ch.id}> \n<a:yes:833101995723194437> **Ping Successful!** You have now ordered a bot\n<a:yes:833101995723194437> 📶 **Ping \`${Math.floor(client.ws.ping)}ms\`**`, ephemeral: true });
     }).catch(e => {
       interaction?.editReply({ content: ":x: **Something went wrong!**", ephemeral: true })
       console.error(e)
